@@ -8,10 +8,7 @@ Repository public này chỉ dùng để giới thiệu dự án. Source code pr
 
 ## Video
 
-GitHub không hiển thị file video trong repository thành trình phát trực tiếp bên trong README. Dùng các link dưới đây để mở trình xem video của GitHub trên trình duyệt:
-
-- [Xem video 2D](https://github.com/tienquocbao/digital-twin-surveillance/blob/master/video_2d.webm)
-- [Xem video 3D](https://github.com/tienquocbao/digital-twin-surveillance/blob/master/video3d.mp4)
+GitHub không phát trực tiếp các file video này trong trang repository vì kích thước file. Hãy mở [trang xem video](https://tienquocbao.github.io/digital-twin-surveillance/) để xem cả hai video ngay trên trình duyệt.
 
 ## Chức năng chính
 

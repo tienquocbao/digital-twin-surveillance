@@ -9,7 +9,6 @@ Choose your language:
 
 ## Videos
 
-- [Watch the 2D video on GitHub](https://github.com/tienquocbao/digital-twin-surveillance/blob/master/video_2d.webm)
-- [Watch the 3D video on GitHub](https://github.com/tienquocbao/digital-twin-surveillance/blob/master/video3d.mp4)
+- [Open the video showcase](https://tienquocbao.github.io/digital-twin-surveillance/)
 
 The source code, model weights, operational data, and deployment configuration remain private.

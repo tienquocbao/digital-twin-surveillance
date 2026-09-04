@@ -8,10 +8,7 @@ This public repository is a showcase only. The private source code, model weight
 
 ## Videos
 
-GitHub does not render repository-hosted video files as inline players inside a README. Use the links below to open GitHub's video viewer in your browser:
-
-- [Watch the 2D video](https://github.com/tienquocbao/digital-twin-surveillance/blob/master/video_2d.webm)
-- [Watch the 3D video](https://github.com/tienquocbao/digital-twin-surveillance/blob/master/video3d.mp4)
+GitHub's repository file view does not play these video files inline because of their size. Use the dedicated [video showcase page](https://tienquocbao.github.io/digital-twin-surveillance/) to watch both videos directly in the browser.
 
 ## Main capabilities
 
