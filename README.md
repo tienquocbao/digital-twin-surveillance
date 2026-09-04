@@ -6,9 +6,10 @@ Hệ thống digital twin cho giám sát không gian bằng computer vision đa 
 
 ## Demo
 
-[Xem video demo](./demo.mp4)
+- [Video demo 2D](./video_2d.webm)
+- [Video demo 3D](./video3d.mp4)
 
-Video minh họa pipeline xử lý video đồng bộ từ nhiều camera và kết quả preview side-by-side.
+Hai video minh họa các lớp hiển thị 2D và 3D của hệ thống digital twin.
 
 ## Tổng quan khả năng
 
