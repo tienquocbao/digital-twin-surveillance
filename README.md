@@ -1,26 +1,32 @@
 # Digital Twin Surveillance
 
-Hệ thống digital twin cho giám sát không gian bằng computer vision đa camera. Hệ thống nhận hình ảnh/video từ camera, phát hiện và theo dõi đối tượng, ánh xạ vị trí từ mặt phẳng ảnh sang không gian 2D, sau đó đồng bộ trạng thái để phục vụ hiển thị và logic nghiệp vụ.
+## English
 
-Đây là repository giới thiệu dự án. Source code, model weights, dữ liệu vận hành và cấu hình triển khai được giữ private trong repository nội bộ.
+Digital Twin Surveillance is a multi-camera computer-vision system for monitoring and visualizing a physical environment as a digital twin. It processes camera streams, detects and tracks objects, maps image coordinates to a 2D plane, and synchronizes world-state data for business logic and visualization.
 
-## Demo
+This public repository is a project showcase only. The private source code, model weights, operational data, and deployment configuration remain in the internal repository.
 
-- [Video demo 2D](./video_2d.webm)
-- [Video demo 3D](./video3d.mp4)
+### Videos
 
-Hai video minh họa các lớp hiển thị 2D và 3D của hệ thống digital twin.
+#### 2D view
 
-## Tổng quan khả năng
+<video controls preload="metadata" width="100%" src="https://raw.githubusercontent.com/tienquocbao/digital-twin-surveillance/master/video_2d.webm"></video>
 
-- Phát hiện người/vật thể bằng mô hình computer vision.
-- Pose estimation và Re-identification để duy trì identity giữa các frame/camera.
-- Đồng bộ video nhiều camera.
-- Hiệu chỉnh camera và homography để chuyển tọa độ pixel sang mặt phẳng 2D.
-- Theo dõi world state và truyền metadata qua Redis/WebSocket.
-- Kết nối backend nghiệp vụ và lớp hiển thị digital twin.
+#### 3D view
 
-## Kiến trúc khái niệm
+<video controls preload="metadata" width="100%" src="https://raw.githubusercontent.com/tienquocbao/digital-twin-surveillance/master/video3d.mp4"></video>
+
+If the embedded player is unavailable in your GitHub client, open [video_2d.webm](./video_2d.webm) or [video3d.mp4](./video3d.mp4).
+
+### Main capabilities
+
+- Multi-camera video synchronization.
+- Object detection, pose estimation, and Re-identification.
+- Camera calibration and homography-based 2D coordinate mapping.
+- World-state tracking and realtime metadata transport.
+- Backend business logic and digital-twin visualization integration.
+
+### Conceptual architecture
 
 ```text
 Camera / Video
@@ -36,23 +42,33 @@ World state & coordinate mapping
       +--> WebSocket / visualization client
 ```
 
-## Công nghệ chính
+### Technology
 
-- Python
-- PyTorch, Ultralytics YOLO, ONNX Runtime và TensorRT
-- Redis cho state/message transport
-- WebSocket cho giao tiếp realtime
-- Docker Compose cho các service phụ trợ
+Python, PyTorch, Ultralytics YOLO, ONNX Runtime, TensorRT, Redis, WebSocket, and Docker Compose.
 
-## Lưu ý bảo mật
+### Security note
 
-Repository này chỉ công khai tài liệu giới thiệu và video demo. Không đưa lên public repository các nội dung sau:
+The public repository intentionally contains only this README and two demonstration videos. It does not contain private source code, `.env` files, secrets, model weights, databases, logs, or original camera data.
 
-- Source code private.
-- File `.env`, secret hoặc credential.
-- Model weights và engine binaries.
-- Database, log và dữ liệu camera gốc.
+## Tiếng Việt
 
-## Trạng thái
+Digital Twin Surveillance là hệ thống computer vision đa camera dùng để giám sát và trực quan hóa một không gian thực dưới dạng digital twin. Hệ thống xử lý luồng camera, phát hiện và theo dõi đối tượng, ánh xạ tọa độ ảnh sang mặt phẳng 2D, đồng bộ world state và cung cấp dữ liệu cho logic nghiệp vụ cũng như lớp hiển thị.
 
-Dự án đang được phát triển nội bộ; video trong repository là bản minh họa cho năng lực xử lý hiện tại.
+Repository public này chỉ dùng để giới thiệu dự án. Source code private, model weights, dữ liệu vận hành và cấu hình triển khai vẫn được giữ trong repository nội bộ.
+
+### Video
+
+- Video 2D được phát trực tiếp ở phần **2D view** phía trên.
+- Video 3D được phát trực tiếp ở phần **3D view** phía trên.
+
+### Chức năng chính
+
+- Đồng bộ video từ nhiều camera.
+- Phát hiện đối tượng, pose estimation và Re-identification.
+- Hiệu chỉnh camera và ánh xạ tọa độ 2D bằng homography.
+- Theo dõi world state và truyền metadata realtime.
+- Kết nối backend nghiệp vụ với lớp hiển thị digital twin.
+
+### Lưu ý bảo mật
+
+Repository public chỉ chứa README và hai video demo. Source code private, file `.env`, secret, model weights, database, log và dữ liệu camera gốc không được công khai.
